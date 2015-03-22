@@ -296,7 +296,9 @@ class Verbose:
             try:
                 fileo = open(fname, 'w')
             except IOError:
-                raise ValueError('Verbose object could not open log file "%s" for writing.\nCheck your matplotlibrc verbose.fileo setting'%fname)
+                raise ValueError('Verbose object could not open log file "{0}"'
+                                 ' for writing.\nCheck your matplotlibrc '
+                                 'verbose.fileo setting'.format(fname))
             else:
                 self.fileo = fileo
 

@@ -2657,7 +2657,7 @@ def rec_join(key, r1, r2, jointype='inner', defaults=None, r1postfix='1', r2post
 
         dt2 = r2.dtype[name]
         if dt1 != dt2:
-            msg = "The '{}' fields in arrays 'r1' and 'r2' must have the same"
+            msg = "The '{0}' fields in arrays 'r1' and 'r2' must have the same"
             msg += " dtype."
             raise ValueError(msg.format(name))
         if dt1.num>dt2.num:
